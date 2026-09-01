@@ -28,18 +28,19 @@ Explored a Linux server using a **KillerCoda Playground** to gather system infor
 
 | 🔍 Info | 💻 Command | 📋 Result |
 |---|---|---|
-| Operating System | `uname -a` | *(fill in after running on KillerCoda)* |
-| CPU Information | `lscpu` | *(fill in after running on KillerCoda)* |
-| Memory | `free -h` | *(fill in after running on KillerCoda)* |
-| Disk Space | `df -h` | *(fill in after running on KillerCoda)* |
+| Operating System | `uname -a` | Linux ubuntu 6.8.0-138-generic #138-Ubuntu SMP, x86_64 GNU/Linux |
+| CPU Information | `lscpu` | Intel Xeon E312xx (Sandy Bridge), x86_64 architecture, 1 CPU, 1 core, KVM virtualized |
+| Memory | `free -h` | Total: 1.9Gi \| Used: 416Mi \| Free: 854Mi \| Available: 1.5Gi |
+| Disk Space | `df -h` | Root (`/dev/vda1`): 19G total, 5.4G used, 13G available (30% used) |
 
 **📸 Terminal Screenshot:**
 
-*(Insert your KillerCoda terminal screenshot here)*
+<img width="1366" height="1401" alt="screencapture-killercoda-playgrounds-scenario-ubuntu-2026-09-01-16_15_13" src="https://github.com/user-attachments/assets/faa6c15a-27e5-4086-be15-1d901735b909" />
+
 
 ### ☁️ If this Linux server were migrated to the cloud, which AWS, Azure, and GCP services could host it?
 
-*(Write your answer here — e.g., this server could be hosted on **Amazon EC2**, **Azure Virtual Machines**, or **Google Compute Engine**, since these are the equivalent virtual machine services across the three providers.)*
+Since this Ubuntu server runs on a single-core x86_64 virtual machine (KVM-virtualized) with modest memory and a 19GB root disk, it could be migrated to a comparable general-purpose virtual machine on any of the three cloud platforms — **Amazon EC2** (e.g., a t3.micro/t3.small instance), **Azure Virtual Machines** (e.g., a B1s/B2s series VM), or **Google Compute Engine** (e.g., an e2-micro/e2-small instance). These are the equivalent Infrastructure-as-a-Service (IaaS) offerings across AWS, Azure, and GCP that let you provision a Linux VM with similar CPU, memory, and storage specifications.
 
 ---
 
